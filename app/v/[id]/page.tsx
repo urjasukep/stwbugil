@@ -58,11 +58,11 @@ export async function generateMetadata(
             title,
             description,
             images: [...previousOgImages, image],
-            url: `/v/${file.filecode}`,
+            url: `/v/${file.filecode}#${file.title}`,
             type: `article`,
         },
         alternates: {
-            canonical: `/v/${file.filecode}`,
+            canonical: `/v/${file.filecode}#${file.title}`,
         },
     };
 }
@@ -88,7 +88,7 @@ export default async function Video({ params }: PageProps) {
         headline: `${file.title}`,
         image: file.splash_img,
         description: `${file.title} di ${SITENAME} Video Bokep Indo Viral Terbaru Xpanas Bocil Ngentot Jilbab Smp Mama Sma`,
-        url: `https://bocahbugil.pages.dev/v/${file.filecode}`,
+        url: `https://bocahbugil.pages.dev/v/${file.filecode}#${file.title}`,
         datePublished: new Date(
             file.uploaded + ".000Z"
         ).toISOString(),
@@ -108,7 +108,7 @@ export default async function Video({ params }: PageProps) {
         headline: `${file.title}`,
         image: file.splash_img,
         description: `${file.title} di ${SITENAME} Video Bokep Indo Viral Terbaru Xpanas Bocil Ngentot Jilbab Smp Mama Sma`,
-        url: `https://bocahbugil.pages.dev/v/${file.filecode}`,
+        url: `https://bocahbugil.pages.dev/v/${file.filecode}#${file.title}`,
         datePublished: new Date(
             file.uploaded + ".000Z"
         ).toISOString(),
@@ -125,7 +125,7 @@ export default async function Video({ params }: PageProps) {
                 userInteractionCount: `${file.views}`,
             interactionType: {
                 '@type': `ReadAction`,
-                target: `https://bocahbugil.pages.dev/v/${file.filecode}`
+                target: `https://bocahbugil.pages.dev/v/${file.filecode}#${file.title}`
             }  
         }
         }
@@ -134,7 +134,7 @@ export default async function Video({ params }: PageProps) {
 <meta itemProp="author" content="admin" />
 <meta itemProp="name" content={`${file.title}`} />
 <meta itemProp="description" content={`${file.title} di ${SITENAME} Video Bokep Indo Viral Terbaru Xpanas Bocil Ngentot Jilbab Smp Mama Sma`} />
-<meta itemProp="duration" content="P0DT0H8M43S" />
+<meta itemProp="duration" content="P0DT1H8M43S" />
 <meta itemProp="thumbnailUrl" content={`${file.splash_img}`} />
 <meta itemProp="embedURL" content={`https://doodstream.com/e/${file.filecode}`} />
 <meta itemProp="uploadDate" content={`${new Date(
