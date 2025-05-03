@@ -40,8 +40,8 @@ export async function generateMetadata(
     }
 
     const file = data.result[0];
-    const title = `${file.title} - ${SITENAME}`;
-    const description = `${file.title} di ${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`;
+    const title = `${file.title}`;
+    const description = `${file.title} di ${SITENAME} Video Bokep Indo Viral Terbaru Xpanas Bocil Ngentot Jilbab Smp Mama Sma`;
     const image = file.splash_img;
     const previousOgImages = (await parent).openGraph?.images || [];
     const previousTwImages = (await parent).twitter?.images || [];
@@ -82,12 +82,12 @@ export default async function Video({ params }: PageProps) {
     }
 
     const file = data.result[0];
-        const jsonLd2 = {
+        const jsonLd = {
         '@context': 'https://schema.org',
-        '@type': 'Article',
-        headline: `${file.title} - ${SITENAME}`,
+        '@type': 'WebPage',
+        headline: `${file.title}`,
         image: file.splash_img,
-        description: `${file.title} di ${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`,
+        description: `${file.title} di ${SITENAME} Video Bokep Indo Viral Terbaru Xpanas Bocil Ngentot Jilbab Smp Mama Sma`,
         url: `https://bocahbugil.pages.dev/v/${file.filecode}`,
         datePublished: new Date(
             file.uploaded + ".000Z"
@@ -100,7 +100,26 @@ export default async function Video({ params }: PageProps) {
                 '@type': 'Person',
                 name: 'admin',
                 url: 'https://bocahbugil.pages.dev'
-              },
+              }
+        }
+        const jsonLd2 = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: `${file.title}`,
+        image: file.splash_img,
+        description: `${file.title} di ${SITENAME} Video Bokep Indo Viral Terbaru Xpanas Bocil Ngentot Jilbab Smp Mama Sma`,
+        url: `https://bocahbugil.pages.dev/v/${file.filecode}`,
+        datePublished: new Date(
+            file.uploaded + ".000Z"
+        ).toISOString(),
+        publisher: {
+            '@type': 'Organization',
+            name: `${SITENAME}`,
+            logo: 'https://bocahbugil.pages.dev/favicon.ico'},
+        author: {
+                '@type': 'Person',
+                name: 'admin',
+                url: 'https://bocahbugil.pages.dev'},
         interactionStatistic: {
             '@type': `InteractionCounter`,
                 userInteractionCount: `${file.views}`,
@@ -110,34 +129,32 @@ export default async function Video({ params }: PageProps) {
             }  
         }
         }
-        const jsonLd3 = {
-            '@context': 'https://schema.org', 
-            '@type': 'Book', 
-            'name': `${file.title} - ${SITENAME}`, 
-            'aggregateRating': {
-            '@type': 'AggregateRating',	
-                'ratingValue': '5',	
-                'ratingCount': `${file.views}`,	
-                'bestRating': '5',	
-                'worstRating': '1' }
-        }
     return (
-        <div className="grid col-span-full gap-4 md:gap-4 md:mx-10">
-        <section>
+        <div className="grid col-span-full gap-4 md:gap-4 md:mx-10" itemProp="video" itemScope itemType="http://schema.org/VideoObject">
+<meta itemProp="author" content="admin" />
+<meta itemProp="name" content={`${file.title}`} />
+<meta itemProp="description" content={`${file.title} di ${SITENAME} Video Bokep Indo Viral Terbaru Xpanas Bocil Ngentot Jilbab Smp Mama Sma`} />
+<meta itemProp="duration" content="P0DT0H8M43S" />
+<meta itemProp="thumbnailUrl" content={`${file.splash_img}`} />
+<meta itemProp="embedURL" content={`https://doodstream.com/e/${file.filecode}`} />
+<meta itemProp="uploadDate" content={`${new Date(
+            file.uploaded + ".000Z"
+        ).toISOString()}`} />
+	<section>
         {/* Add JSON-LD to your page */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd2) }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd3) }}
-        />
         {/* ... */}
         </section>
             <iframe
-                className="w-full h-[30vh] md:h-[55vh] lg:h-[70vh]"
-                src={`https://${upstream}/e/${file.filecode}`}
+                className="w-full h-[55vh] md:h-[55vh] lg:h-[70vh]"
+                src={`https://doodstream.com/e/${file.filecode}`}
                 scrolling="no"
                 title={file.title}
                 frameBorder={0}
@@ -149,13 +166,21 @@ export default async function Video({ params }: PageProps) {
                         {file.title}
                     </CardTitle>
                 </CardHeader>
+<center><script
+      dangerouslySetInnerHTML={{
+         __html: `(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':1078976})`,
+      }}
+   /><Script data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"/><ins id="1078976" data-width="300" data-height="112"></ins></center>
+            <p>{file.title} di {SITENAME} Video Bokep Indo Viral Terbaru Xpanas Bocil Ngentot Jilbab Smp Mama Sma Jepang Jav Barat Simontok hub sotwe olmek avtube pijat pure gudang pemerkosaan rumah tobrut inggris ngintip vcs binor yandex update remaja {SITENAME} wiki raja bokeptube full porno bocahbugila simontok {file.title} playbokep indobokep xpanasonline indoh janda streaming jepang barat korea japan jav cina japanese china rusia arab india thailand hd anime hentai bokepind gudang avtub pijat sotwe rumah pemerkosaan inggris xpanas pure tobrut vcs ngintip binor {SITENAME} remaja yandex update perselingkuhan wiki raja full com porno indoh Hotbabes Big Tits Family Freeporn Ass Naked Celebs Nude Cam Hot Videos Fucking Free Porno Adult Movies Mom Freesex Nudelive Cams Women Stepmom Hotwife Bigtits Melons Tube Huge Tits Pornos Film x Titshits Pornofilme Nice Natural Fuq Girls Teen Sex Pornstars Tube Dick Jihad</p>
             </Card>
-            <p>{file.title} di {SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma hub sotwe olmek avtube pijat pure gudang pemerkosaan rumah tobrut inggris ngintip vcs binor yandex update remaja {SITENAME} wiki raja bokeptube full porno bokepmama simontok {file.title} playbokep indobokep xpanasonline indoh janda streaming jepang barat korea japan jav cina japanese china rusia arab india thailand hd anime hentai bokepind gudang avtub pijat sotwe rumah pemerkosaan inggris xpanas pure tobrut vcs ngintip binor {SITENAME} remaja yandex update perselingkuhan wiki raja full com porno indoh Hotbabes Big Tits Family Freeporn Ass Naked Celebs Nude Cam Hot Videos Fucking Free Porno Adult Movies Mom Freesex Nudelive Cams Women Stepmom Hotwife Bigtits Melons Tube Huge Tits Pornos Film x Titshits Pornofilme Nice Natural Fuq Girls Teen Sex Pornstars Tube Dick Jihad</p>
-            <h2 className="text-2xl font-bold text-center my-4">
-                Related Video {file.title}
+            <h2 className="text-2xl font-bold text-center my-4">Related Video {file.title}
             </h2>
+<center><script
+      dangerouslySetInnerHTML={{
+         __html: `(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':1058210})`,
+      }}
+   /><Script data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"/><ins id="1058210" data-width="300" data-height="262"></ins></center>
             <SearchCardList query={file.title.split(" ")[2]} />
-<p>{SITENAME} Video bokep indo terbaru viral {file.title} korea china tante live paksa ngentot abg cewek pelajar pijat Hijab Abg Colmek Film Tante Hot Twitter Asia Download Live stw situs indonesia nonton link sd crot playbokep simontok bokepin montok baru perawan anak kecil telegram selingkuh ojol cantik gay vidio lokal artis pelajar Video Bokep indo jepang indonesia barat viral bokep video terbaru bocil bokepindo korea jilbab smp japan ama sub sma jav cina japanese anime hijab abg colmek film tante twitter asia china rusia no sensor hot arab india download live stw thailand situs hd nonton {file.title} link baru mom montok telegram perawan sd anak kecil crot bokepindoh selingkuh cantik ojol lokal vidio gay asian anime amerika hentai artis streaming pelajar janda Video Bokep indo jepang indonesia barat viral bokep video terbaru bocil bokepindo korea jilbab smp japan ama sub sma jav cina japanese {SITENAME} Hotbabes Big Tits Family Freeporn Ass Naked Celebs Nude Cam Hot Videos Fucking Free Porno Adult Movies Mom Freesex Nudelive Cams Women Stepmom Hotwife Bigtits Melons Tube Huge Tits Pornos Film x Titshits Pornofilme Nice Natural Fuq Girls Teen Sex Pornstars Tube Dick Jihad anime hijab abg colmek film tante twitter asia china rusia no sensor hot arab india download live stw thailand situs hd nonton link baru mom montok telegram perawan sd anak kecil crot bokepindoh selingkuh cantik ojol lokal vidio gay asian anime amerika hentai artis streaming pelajar janda hub sotwe olmek avtube pijat pure gudang pemerkosaan rumah tobrut inggris ngintip vcs binor yandex update remaja {file.title} wiki raja bokeptube full porno bokepmama simontok bokepind playbokep indobokep xpanasonline {SITENAME} indoh</p>
 <Script src="https://js.juicyads.com/jp.php?c=947403z2v256s2x2x294z2b4&u=http%3A%2F%2Fwww.juicyads.rocks"/>
         </div>
     );
